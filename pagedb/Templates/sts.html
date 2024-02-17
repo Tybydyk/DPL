@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Car{% endblock title %}
+{% block header %}Вводим модель машины и фото СТС{% endblock header %}
+{% block content%}
+{#     <div class="wrapper">#}
+    <h3>Фотографируем "СВИДЕТЕЛЬСТВО О РЕГИСТРАЦИИ ТС" с той стороны,</h3>
+    <h3>где указан Регистрационный знак и Идентификационный номер (VIN).</h3>
+    <h3>Выравниваем по вертикали.</h3>
+    <img src="{% static 'images/sts05.jpg' %}" alt="sts">
+    <h3>Обрезаем, как показано на рисунке.</h3>
+    <h3>Сохраняем.</h3>
+
+    <h2>{{ message }}</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Нажать, чтобы загрузить фотографию СТС в базу">
+    </form>
+
+{#        </div>#}
+
+{% endblock content %}

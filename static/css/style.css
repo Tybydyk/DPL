@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "SegoeUILight";
+    src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+    src: url("../fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+    url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+h1, h2, h3, a, p, b, i {
+    font-family: "SegoeUILight";
+}
+header {
+    font-family: "SegoeUILight";
+    text-align: center;
+}
+body {
+
+    background: linear-gradient(#26516b, #65a8b7);
+    font-family: "SegoeUILight";
+}
+div {
+    font-family: "SegoeUILight";
+    text-align: center;
+}
+/*.wrapper {*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    width: 600px;*/
+/*}*/
+
+img{
+    width: 500px;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+
+h1, h2 {
+    color: rgba(245, 217, 105, 0.9);
+    text-align: center;
+}
+h3{
+    color: rgba(244, 252, 205, 0.85);
+    text-align: center;
+}
+/*ul {*/
+/*    list-style: square ;*/
+/*    text-align: left;*/
+/*}*/
+a {
+    color: rgba(255, 255, 255, 0.85);
+}
+a:hover {
+    color: rgb(144, 220, 248);
+}
