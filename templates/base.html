@@ -4,14 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Default title{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
 </head>
 <body>
-    <div><a href="/">Главная</a> | <a href="/car">Ввод СТС</a> |
-        <a href="/admin">Админ</a> | <a href="/contacts">Контакты</a></div>
-    <h1>{% block header %}{% endblock header %}<br></h1>
-    <div>{% block content%}{% endblock content %}<br></div>
-    <div><a>WingsForTheCarCorp. 2024. All rights reserved.</a></div>
+        <title>{% block title %}Default title{% endblock title %}</title>
+    <div class="header">
+<a href="/">Главная</a> | <a href="/car">Ввод СТС</a> |
+            <a href="/admin">Админ</a> | <a href="/contacts">Контакты</a>
+    </div>
+        <h1>{% block header %}{% endblock header %}<br></h1>
+        <div>{% block content%}{% endblock content %}<br></div>
+
+        <div class="footer">
+             <div><a>WingsForTheCarCorp. 2024. All rights reserved.</a></div>
+        </div>
 </body>
 </html>
